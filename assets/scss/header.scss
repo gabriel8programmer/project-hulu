@@ -1,1 +1,226 @@
-header {}
+.header {
+  width: 100%;
+  height: 730px;
+
+  background-image: url("../images/bg-films.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  display: flex;
+  flex-direction: column;
+
+  .landing-page {
+    background-color: rgba($dark, 80%);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    flex: 1;
+
+    .landing-page-header {
+      padding: 20px 40px;
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+
+      .soon,
+      button {
+        font-weight: bold;
+      }
+
+      .soon {
+        color: $secondary-color;
+        font-size: 25px;
+        letter-spacing: 1px;
+      }
+
+      button {
+        background: #0000;
+        color: $gray;
+        padding: 12px 15px;
+        font-size: 15px;
+        text-shadow: 0px 0px 2px $dark;
+        border-radius: 10px;
+
+        &:hover {
+          background-color: darken($color: $gray, $amount: 45%);
+          color: $light;
+          cursor: pointer;
+        }
+      }
+    }
+
+    .landing-page-presentation {
+      width: 1024px;
+      margin: 0 auto;
+
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      flex: 1;
+
+      .presentation-content {
+
+        width: 600px;
+        margin: 0 auto 30px;
+
+        h1,
+        h2 {
+          text-align: center;
+          font-weight: bold;
+        }
+
+        h1 {
+          color: darken($color: $secondary-color, $amount: 5%);
+          text-transform: uppercase;
+          font-size: 12px;
+        }
+
+        img {
+          width: 600px;
+          margin: 20px auto;
+        }
+
+        h2 {
+          font-size: 25px;
+          color: $light;
+        }
+      }
+
+      .presentation-nav-links {
+
+        width: 650px;
+        margin: 0 auto;
+
+        ul {
+
+          li {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            a {
+              color: $light;
+              text-align: center;
+              margin: 0 0 10px;
+
+              &.btn {
+                width: 100%;
+                padding: 15px 30px;
+                border-radius: 5px;
+                background-color: $secondary-color;
+                color: $dark;
+                text-transform: uppercase;
+                font-size: 14px;
+                letter-spacing: 1px;
+                font-weight: 700;
+                transition: .5s;
+
+                &:hover {
+                  background: rgba($secondary-color, 40%);
+                }
+              }
+
+              &.terms,
+              &.sign-up {
+                text-decoration: underline;
+              }
+
+              &.terms {
+                font-size: 15px;
+                margin-bottom: 30px;
+                margin-top: 10px;
+              }
+
+              &.sign-up {
+                font-size: 16px;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .landing-page-banner-fixed {
+
+      width: 100%;
+      height: 160px;
+      background-color: rgba($dark, 50%);
+      padding: 0 50px;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      img {
+        width: 400px;
+      }
+
+      article {
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        margin: 0 20px;
+
+        h1 {
+          color: darken($color: $secondary-color, $amount: 5%);
+          text-transform: uppercase;
+          font-size: 14px;
+          margin-bottom: 15px;
+        }
+
+        h2 {
+          font-size: 20px;
+          color: $light;
+        }
+      }
+
+      nav {
+
+        ul {
+
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+
+          li {
+
+            margin: 10px 0;
+
+            a {
+              color: $light;
+              text-align: center;
+
+              &.btn {
+                border: 1px solid $light;
+                padding: 15px;
+                border-radius: 5px;
+                text-transform: uppercase;
+                font-weight: bold;
+                color: $light;
+                transition: 0.5s;
+
+                &:hover {
+                  transform: scale(80%);
+                  background: $gray;
+                  color: $dark;
+                  border: 1px solid $gray;
+                  transform: scale(50%);
+                }
+              }
+
+              &.terms {
+                color: $gray;
+                font-size: 12px;
+                text-decoration: underline;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,3 +1,7 @@
-body {
-  background-color: #777;
-}
+@import "./variables.scss";
+
+//components
+@import "./header.scss";
+
+//config
+@import "./config.scss";

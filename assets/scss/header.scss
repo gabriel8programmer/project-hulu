@@ -6,23 +6,25 @@
   background-repeat: no-repeat;
   background-size: cover;
 
-  display: flex;
-  flex-direction: column;
+  @extend .flex-column;
 
   .landing-page {
-    background-color: rgba($dark, 80%);
+    background-color: rgba($dark, 70%);
 
-    display: flex;
-    flex-direction: column;
+    @extend .flex-column;
     justify-content: space-between;
     align-items: center;
     flex: 1;
+
+    .landing-page-header,
+    .landing-page-banner-fixed {
+      width: 100%;
+    }
 
     .landing-page-header {
       padding: 20px 40px;
       display: flex;
       justify-content: space-between;
-      width: 100%;
 
       .soon,
       button {
@@ -52,11 +54,6 @@
     }
 
     .landing-page-presentation {
-      width: 1024px;
-      margin: 0 auto;
-
-      display: flex;
-      flex-direction: column;
       justify-content: center;
       flex: 1;
 
@@ -96,8 +93,7 @@
         ul {
 
           li {
-            display: flex;
-            flex-direction: column;
+            @extend .flex-column;
             align-items: center;
 
             a {
@@ -144,71 +140,72 @@
 
     .landing-page-banner-fixed {
 
-      width: 100%;
-      height: 160px;
       background-color: rgba($dark, 50%);
-      padding: 0 50px;
 
-      display: flex;
-      align-items: center;
-      justify-content: center;
+      .row {
 
-      img {
-        width: 400px;
-      }
+        padding: 20px 40px;
 
-      article {
-
-        display: flex;
-        flex-direction: column;
         align-items: center;
+        justify-content: space-between;
 
-        margin: 0 20px;
-
-        h1 {
-          color: darken($color: $secondary-color, $amount: 5%);
-          text-transform: uppercase;
-          font-size: 14px;
-          margin-bottom: 15px;
-        }
-
-        h2 {
-          font-size: 20px;
-          color: $light;
-        }
-      }
-
-      nav {
-
-        ul {
+        article {
 
           display: flex;
-          flex-direction: column;
           align-items: center;
 
-          li {
+          margin: 0 20px;
 
-            margin: 10px 0;
+          img {
+            width: 350px;
+          }
+
+          .titles {
+            @extend .flex-column;
+            align-items: center;
+          }
+
+          h1 {
+            color: darken($color: $secondary-color, $amount: 5%);
+            text-transform: uppercase;
+            font-size: 13px;
+            font-weight: bold;
+            margin-bottom: 15px;
+          }
+
+          h2 {
+            font-size: 25px;
+            color: $light;
+          }
+        }
+
+        nav {
+
+          ul {
+
+            @extend .flex-column;
+            justify-content: center;
+            align-items: center;
 
             a {
               color: $light;
               text-align: center;
+              display: block;
 
               &.btn {
-                border: 1px solid $light;
                 padding: 15px;
+                margin-bottom: 5px;
+                border: 2px solid $light;
                 border-radius: 5px;
                 text-transform: uppercase;
                 font-weight: bold;
                 color: $light;
-                transition: 0.5s;
 
                 &:hover {
-                  transform: scale(80%);
-                  background: $gray;
+                  background: $light;
                   color: $dark;
-                  border: 1px solid $gray;
-                  transform: scale(50%);
+                  border: 1px solid $light;
+                  transform: scale(95%);
                 }
               }
 
@@ -216,6 +213,7 @@
                 color: $gray;
                 font-size: 12px;
                 text-decoration: underline;
+
               }
             }
           }

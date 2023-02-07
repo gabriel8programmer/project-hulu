@@ -1,0 +1,28 @@
+.landing-page {
+
+  .landing-page-presentation {
+
+    article.container {
+
+      align-items: center;
+      justify-content: space-evenly;
+    }
+
+    .presentation-content,
+    .presentation-nav-links {
+      width: 60%;
+    }
+
+    .presentation-content {
+
+      img {
+        width: 100%;
+      }
+
+    }
+
+    .presentation-nav-links {}
+
+  }
+
+}

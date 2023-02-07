@@ -1,0 +1,15 @@
+.landing-page {
+
+  background-image: url(../images/bg-films.jpg);
+  background-repeat: no-repeat;
+  background-position-x: 100%;
+  background-position-y: 100%;
+  background-size: cover;
+
+  header,
+  .landing-page-presentation,
+  .landing-page-banner-fixed {
+    background-color: #0006;
+  }
+
+}

@@ -11,88 +11,101 @@
 
 <body>
 
-  <!--header-->
-  <header>
+  <!--main component-->
+  <main>
 
-    <!--section landing page-->
+    <!--component - landing page - presentation -->
     <section class="landing-page">
 
-      <!--header with soon and login-->
-      <section class="landing-page-header container">
-        <div class="row">
-          <div class="soon">hulu</div>
-          <button>LOG IN</button>
-        </div>
-      </section>
-      <!--end header with soon and login-->
+      <!--header-->
+      <header>
 
-      <!--section for content of presentation-->
-      <section class="landing-page-presentation container">
-
-        <!--section for presentation of content-->
-        <article class="presentation-content">
-          <h1>disney bundle trio basic</h1>
-          <img src="./assets/images/image-larger-hulu.png" alt="image larger in center of page of presentation" />
-          <h2>Get Hulu, Disney+, and ESPN+, all with ads.</h2>
+        <article class="row">
+          <div class="soon">
+            <span>hulu</span>
+          </div>
+          <button class="btn-login">Log in</button>
         </article>
 
-        <!--nav with items of link and a button-->
-        <nav class="presentation-nav-links">
-          <ul>
-            <li>
-              <a href="#" class="btn">Get all three</a>
-            </li>
-            <li>
-              <a href="#" class="terms">Terms apply</a>
-            </li>
-            <li>
-              <a href="#" class="sign-up">Sign up for hulu only</a>
-            </li>
-          </ul>
-        </nav>
-        <!--end nav with items of link and a button-->
+      </header>
+      <!--end header-->
 
-      </section>
-      <!--end section for presentation of content-->
+      <!--component - content-->
+      <section class="landing-page-presentation">
 
-      <!--section with banner fixed-->
-      <section class="landing-page-banner-fixed container">
+        <!--container-->
+        <article class="container">
 
-        <!--items in direction row-->
-        <article class="row">
+          <!--component - descript the content-->
+          <section class="presentation-content">
+            <h1>disney bundle trio basic</h1>
+            <img src="./assets/images/image-larger-hulu.png" alt="image larger in center of page of presentation" />
+            <h2>Get Hulu, Disney+, and ESPN+, all with ads.</h2>
+          </section>
 
-          <!--image-->
-          <img src="./assets/images/image-larger-cut-hulu.png" />
-
-          <!--div titles-->
-          <div class="titles">
-            <h1>Get bundle duo basic</h1>
-            <h2>Get Hulu, Disney+, and ESPN+, all with ads, for $12.99/mo.</h2>
-          </div>
-
-          <!--nav links with button-->
-          <nav>
+          <!--component - nav-links-->
+          <nav class="presentation-nav-links">
             <ul>
               <li>
-                <a href="#" class="btn">Get them both</a>
+                <a href="#" class="btn">Get all three</a>
               </li>
               <li>
                 <a href="#" class="terms">Terms apply</a>
               </li>
+              <li>
+                <a href="#" class="sign-up">Sign up for hulu only</a>
+              </li>
             </ul>
           </nav>
-          <!--end nav links with button-->
+
         </article>
-        <!--end items in direction row-->
 
       </section>
-      <!--end container-->
+      <!--end component - content-->
+
+      <!--component - banner fixed -->
+      <section class="landing-page-banner-fixed">
+
+        <!--container-->
+        <section class="container">
+
+          <!--article with image-->
+          <article class="row">
+
+            <img src="./assets/images/image-larger-cut-hulu.png" />
+
+            <div class="titles">
+              <h1>Get bundle duo basic</h1>
+              <h2>Get Hulu, Disney+, and ESPN+, all with ads, for $12.99/mo.</h2>
+            </div>
+
+            <!--list link of the page end a link/button-->
+            <nav>
+              <ul>
+                <li>
+                  <a href="#" class="btn">Get them both</a>
+                </li>
+                <li>
+                  <a href="#" class="terms">Terms apply</a>
+                </li>
+              </ul>
+            </nav>
+
+          </article>
+
+        </section>
+
+      </section>
+      <!--end component - banner fixed -->
+
+
+      <!--end component for all the landing-page -->
 
     </section>
-    <!--end section landing page-->
+    <!--end component - landing page - presentation -->
 
-  </header>
-  <!--end header-->
+  </main>
+  <!--end main component-->
 
 </body>
 
